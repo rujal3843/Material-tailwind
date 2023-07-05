@@ -6,6 +6,8 @@ import { TbReportAnalytics } from "react-icons/tb";
 import { AiOutlineUser, AiOutlineHeart } from "react-icons/ai";
 import { FiMessageSquare, FiFolder, FiShoppingCart } from "react-icons/fi";
 import { Link } from "react-router-dom";
+import { Avatar } from "@material-tailwind/react";
+import image from '../assets/abc.jpg'
 
 const Sidebar = () => {
   const menus = [
@@ -24,7 +26,10 @@ const Sidebar = () => {
       <div
         className={`bg-[#0e0e0e] min-h-screen ${open ? "w-72" : "w-16"} duration-500 text-gray-100 px-4`}
       >
+        <div className="flex gap-10">
+        <Avatar src={image} alt="avatar" />
          <p className="font-extrabold text-4xl ">Logo</p>
+        </div>
         <div className="py-3 flex justify-end">
         
           <HiMenuAlt3
